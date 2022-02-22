@@ -18,13 +18,13 @@ export default function TheNav() {
           <Link to="/" className="hover:underline">
             Discover
           </Link>
-          <Link to="/uidesign" className="hover:underline">
+          <Link to="/articles" className="hover:underline">
             Ui Design
           </Link>
-          <Link to="/frontend" className="hover:underline">
+          <Link to="/articles" className="hover:underline">
             Frontend
           </Link>
-          <Link to="/backend" className="hover:underline">
+          <Link to="/articles" className="hover:underline">
             Backend
           </Link>
           <div className="relative">
