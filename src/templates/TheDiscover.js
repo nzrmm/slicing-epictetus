@@ -4,8 +4,8 @@ import { articles } from '../utils/articles';
 export default function TheDiscover() {
   return (
     <section>
-      {articles.slice(0, 1).map((article, index) => {
-        return <BaseCardLarge key={index} children={article} />;
+      {articles.slice(0, 1).map(article => {
+        return <BaseCardLarge key={article.id} children={article} />;
       })}
     </section>
   );
