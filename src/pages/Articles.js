@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
 import { articles } from '../utils/articles';
+
 import BaseCardSmall from '../base/BaseCardSmall';
 
 export default function Articles() {
+  useEffect(() => {
+    document.title = 'Articles - The Epictetus';
+  });
+
   return (
     <section>
       <div className="py-16 text-center">

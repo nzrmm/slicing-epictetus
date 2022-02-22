@@ -12,7 +12,7 @@ export default function TheNav() {
       <div className="flex-center gap-32">
         <div className="flex-center gap-4">
           <div className="flex-center h-10 w-10 rounded-md bg-dark-500">E</div>
-          <span>Epictetus</span>
+          Epictetus
         </div>
         <div className="flex gap-10">
           <Link to="/" className="hover:underline">
