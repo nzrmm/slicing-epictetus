@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Discover from './pages/Discover';
 import Articles from './pages/Articles';
+import ArticlesDetail from './pages/ArticlesDetail';
 
 import TheNavbar from './templates/TheNavbar';
 import TheFooter from './templates/TheFooter';
@@ -15,6 +16,7 @@ function App() {
           <Route path="/articles" element={<Articles />}></Route>
           <Route path="/articles" element={<Articles />}></Route>
           <Route path="/articles" element={<Articles />}></Route>
+          <Route path="/articles/:id" element={<ArticlesDetail />}></Route>
         </Routes>
         <TheFooter />
       </div>

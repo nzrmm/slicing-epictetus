@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function CardContent(props) {
   const data = props.children;
   return (
@@ -5,7 +7,9 @@ export default function CardContent(props) {
       <span>
         {data.tag} &bull; {data.publisedAt}
       </span>
-      <h2 className="my-4">{data.title}</h2>
+      <Link to={`/articles/${data.id}`}>
+        <h2 className="my-4">{data.title}</h2>
+      </Link>
       <p className="mb-6 w-10/12 text-typo-400">{data.description}</p>
       <div className="flex items-center gap-4">
         <img
