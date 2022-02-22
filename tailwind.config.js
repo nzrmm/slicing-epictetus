@@ -9,6 +9,7 @@ module.exports = {
         md: '2rem',
         xl: '3rem',
         lg: '4rem',
+        xl: '5rem',
       },
     },
     fontFamily: {

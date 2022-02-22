@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function TheNav() {
+  const [list, setList] = useState(false);
+
+  function toggleList() {
+    setList(!list);
+  }
   return (
     <nav className="flex-between py-8">
       <div className="flex-center gap-32">
@@ -9,11 +15,45 @@ export default function TheNav() {
           <span>Epictetus</span>
         </div>
         <div className="flex gap-10">
-          <Link to="/">Discover</Link>
-          <Link to="/uidesign">Ui Design</Link>
-          <Link to="/frontend">Frontend</Link>
-          <Link to="/backend">Backend</Link>
-          <Link to="/other">Other</Link>
+          <Link to="/" className="hover:underline">
+            Discover
+          </Link>
+          <Link to="/uidesign" className="hover:underline">
+            Ui Design
+          </Link>
+          <Link to="/frontend" className="hover:underline">
+            Frontend
+          </Link>
+          <Link to="/backend" className="hover:underline">
+            Backend
+          </Link>
+          <div className="relative">
+            <button className="hover:underline" onClick={toggleList}>
+              Other
+            </button>
+            {list && (
+              <div className="absolute left-0 top-8 grid w-48 overflow-hidden rounded-md bg-dark-800">
+                <Link
+                  to="/"
+                  onClick={toggleList}
+                  className="border-b border-neutral-600/40 px-6 py-3 hover:bg-dark-500">
+                  Internet
+                </Link>
+                <Link
+                  to="/"
+                  onClick={toggleList}
+                  className="border-b border-neutral-600/40 px-6 py-3 hover:bg-dark-500">
+                  Books
+                </Link>
+                <Link
+                  to="/"
+                  onClick={toggleList}
+                  className="border-b border-neutral-600/40 px-6 py-3 hover:bg-dark-500">
+                  Open Source
+                </Link>
+              </div>
+            )}
+          </div>
         </div>
       </div>
       <div>

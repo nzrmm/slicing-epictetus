@@ -3,7 +3,6 @@ import Discover from './pages/Discover';
 import Uidesign from './pages/Uidesign';
 import Frontend from './pages/Frontend';
 import Backend from './pages/Backend';
-import Other from './pages/Other';
 
 import TheNavbar from './templates/TheNavbar';
 import TheFooter from './templates/TheFooter';
@@ -18,7 +17,6 @@ function App() {
           <Route path="/uidesign" element={<Uidesign />}></Route>
           <Route path="/frontend" element={<Frontend />}></Route>
           <Route path="/backend" element={<Backend />}></Route>
-          <Route path="/other" element={<Other />}></Route>
         </Routes>
         <TheFooter />
       </div>
