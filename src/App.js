@@ -6,6 +6,7 @@ import Backend from './pages/Backend';
 import Other from './pages/Other';
 
 import TheNavbar from './templates/TheNavbar';
+import TheFooter from './templates/TheFooter';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/backend" element={<Backend />}></Route>
           <Route path="/other" element={<Other />}></Route>
         </Routes>
+        <TheFooter />
       </div>
     </main>
   );
