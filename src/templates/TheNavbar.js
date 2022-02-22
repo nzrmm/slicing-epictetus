@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function TheNav() {
   return (
-    <nav className="flex-between mb-4 py-8">
+    <nav className="flex-between py-8">
       <div className="flex-center gap-32">
         <div className="flex-center gap-4">
           <div className="flex-center h-10 w-10 rounded-md bg-dark-500">E</div>
