@@ -1,16 +1,17 @@
 import CardContent from '../organism/CardContent';
 
-export default function BaseCardLarge() {
+export default function BaseCardLarge(props) {
+  const data = props.children;
   return (
     <article className="grid grid-cols-3 gap-8">
       <figure className="col-span-2">
         <img
-          src="/images/image-hero.png"
+          src={data.imgArticleSrc}
           className="h-auto w-full"
-          alt="ImageHero"
+          alt={data.imgArticleAlt}
         />
       </figure>
-      <CardContent />
+      <CardContent children={data} />
     </article>
   );
 }
