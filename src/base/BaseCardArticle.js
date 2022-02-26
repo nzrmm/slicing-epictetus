@@ -6,7 +6,7 @@ export default function BaseCardArticle(props) {
         <span>
           {data.tag} &bull; {data.publisedAt}
         </span>
-        <h2 className="my-4 w-6/12 text-center">{data.title}</h2>
+        <h2 className="my-4 w-10/12 text-center lg:w-6/12">{data.title}</h2>
         <div className="flex items-center gap-4">
           <img
             src={data.imgPeopleSrc}
@@ -22,25 +22,25 @@ export default function BaseCardArticle(props) {
       <figure className="flex justify-center">
         <img
           src="/images/image-detail.png"
-          className="h-auto w-10/12"
+          className="h-auto w-full lg:w-10/12"
           alt="ImageDetail"
         />
       </figure>
       <div className="flex flex-col items-center gap-6">
-        <p className="w-8/12">
+        <p className="w-10/12 lg:w-8/12">
           Male sixth sea it a. Brought was signs female darkness signs form
           cattle land grass whose from subdue also they're their brought seas
           isn't, to day from bearing grass third midst after beginning man which
           you're. Dry, gathering beginning given made them evening.
         </p>
-        <p className="w-8/12">
+        <p className="w-10/12 lg:w-8/12">
           Lights dry. Thing, likeness, forth shall replenish upon abundantly our
           green. Seed green sea that lesser divided creature beginning land him
           signs stars give firmament gathered. Wherein there their morning a he
           grass. Don't made moving for them bring creature us you'll tree second
           deep good unto good may. Us yielding.
         </p>
-        <p className="w-8/12">
+        <p className="w-10/12 lg:w-8/12">
           Have. Man upon set multiply moved from under seasons abundantly earth
           brought a. They're open moved years saw isn't morning darkness. Over,
           waters, every let wherein great were fifth saw was lights very our

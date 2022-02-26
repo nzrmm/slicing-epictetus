@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function CardContent(props) {
   const data = props.children;
   return (
-    <div className="col-span-1 mt-4">
+    <div className="mt-4 lg:col-span-1">
       <span>
         {data.tag} &bull; {data.publisedAt}
       </span>
