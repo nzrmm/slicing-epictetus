@@ -64,7 +64,7 @@ export default function TheNav() {
                   Other
                 </button>
                 {list && (
-                  <div className="absolute left-0 top-8 grid w-48 overflow-hidden rounded-md bg-dark-800">
+                  <div className="absolute left-0 top-8 grid w-48 overflow-hidden rounded-md bg-dark-600">
                     <Link
                       to="/"
                       onClick={toggleList}
